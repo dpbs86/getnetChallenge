@@ -1,0 +1,103 @@
+[
+  {
+    "line": 9,
+    "elements": [
+      {
+        "start_timestamp": "2020-07-17T16:33:14.101Z",
+        "line": 14,
+        "name": "Validate message",
+        "description": "",
+        "id": "getnet-challenge---check-search-field-and-messages;validate-message",
+        "after": [
+          {
+            "result": {
+              "duration": 2158795500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SearchSteps.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 19533708100,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "that I access the getnet site",
+            "match": {
+              "location": "SearchSteps.thatIAccessTheGetnetSite()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6778505800,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "fill in the search with \"superget\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"superget\"",
+                  "offset": 24
+                }
+              ],
+              "location": "SearchSteps.fillInTheSearchWith(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 12963102301,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I see the search result and click",
+            "match": {
+              "location": "SearchSteps.iSeeTheSearchResultAndClick()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 194594200,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I must see the message with the informative content with the text",
+            "match": {
+              "location": "SearchSteps.iMustSeeTheMessageWithTheInformativeContentWithTheText()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Search"
+          }
+        ]
+      }
+    ],
+    "name": "Getnet Challenge - Check search field and messages",
+    "description": "    As a site user\n    I must use the field to search and get results relevant to my search\n    Clicking on a result I should see more information about what was searched",
+    "id": "getnet-challenge---check-search-field-and-messages",
+    "keyword": "Feature",
+    "uri": "file:src/test/features/search.feature",
+    "tags": [
+      {
+        "name": "@Search",
+        "type": "Tag",
+        "location": {
+          "line": 8,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
